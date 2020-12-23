@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<script type="text/javascript">
+navigator.sayswho= (function(){
+    var ua= navigator.userAgent, tem, 
+    M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+    if(/trident/i.test(M[1])){
+        tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+        return 'IE '+(tem[1] || '');
+    }else{
+		var href = window.location.href;
+        var dir = href.substring(0, href.lastIndexOf('/')) + "/";
+		var file = dir + 'calculadora.html';
+		window.location = file;
+	}
+
+})();
+</script>
+<link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=11">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de probabilidades de adopción de TIC y usos de Internet en México</title>
+<!--Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+<!-- Intro CSS -->
+<link rel="stylesheet" href="css/introjs.min.css">
+<!-- Bootstrap -->
+<link href="css/bootstrap3.min.css" rel="stylesheet">
+<!-- Layout personalizado CSS -->
+<link rel="stylesheet" href="css/layout_ie.css">
+<link rel="canonical" href="http://calculadoraprob.ift.org.mx/calculadora_ie.html" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+<script>
+ 	var loc=window.location.hostname;
+	if(loc==="calculadoraprob.ift.org.mx"){
+		'use strict';
+		var Myscript1 = document.createElement('script');
+		Myscript1.type="text/javascript";
+		Myscript1.async="true";
+		Myscript1.src="https://www.googletagmanager.com/gtag/js?id=UA-43968735-32";
+		document.head.appendChild(Myscript1);
+		var Myscript2 = document.createElement('script');
+		Myscript2.src="js/analytics.js";
+		document.head.appendChild(Myscript2);
+	}
+</script>
+</head>
+<body class="intro">
+<header>
+  <div id="header_top" class="header-top container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+			<a tabindex="1" href="http://www.ift.org.mx/" target="_blank"><img class="header-ift-logo" alt="Instituto Federal de Telecomunicaciones" src="svg/ift-logo-header.svg" /></a>
+		  </div>
+        <div class="col-sm-12 col-md-8">
+          <h1 tabindex="2" class="header-main-title" aria-label="Calculadora de probabilidades de adopción de TIC y usos de Internet en México">Calculadora de probabilidades de adopción de TIC y usos de Internet en México</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="header_middle" class="header-middle container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 header-secondary-title-container">
+          <h2 class="header-secondary-title">1. TIC o usos de Internet</h2>
+        </div>
+        <div id="tics_group" class="col-md-12 col-lg-8 " data-step="1" data-intro="En esta sección selecciona <strong>la adopción de TIC o uso de Internet</strong> de tu interes">
+          <nav id="main_navbar" class="main-nav-bar-container">
+			  <ul class="main-nav-bar">
+                <li tabindex="2" id="uso_computadora" name="uso de computadora" class="main-nav-bar-list-item selected" data-step="2" data-intro="para este ejemplo seleccionamos la TIC de <strong>uso de computadora</strong>"><i class="main-menu-item-icon ico icon-uso-computadora">&#xe820;</i> <span class="main-menu-item-label">Uso de computadora</span></li>
+                <li tabindex="4" id="uso_internet" name="uso de Internet" class="main-nav-bar-list-item"><i class="main-menu-item-icon ico icon-uso-internet">&#xe821;</i> <span class="main-menu-item-label">Uso de Internet</span></li>
+                <li tabindex="5" id="uso_celular" name="uso de télefono celular" class="main-nav-bar-list-item"><i class="main-menu-item-icon s-wide ico icon-uso-celular">&#xe822;</i> <span class="main-menu-item-label">Uso de celular</span></li>
+                <li tabindex="6" id="internet_smartphone" name="uso de Intenet mediante smartphone" class="main-nav-bar-list-item"><i class="main-menu-item-icon s-wide ico icon-internet-smartphone">&#xe823;</i> <span class="main-menu-item-label">Internet smartphone</span></li>
+                <li tabindex="7" id="compras_internet" name="compras por internet" class="main-nav-bar-list-item"><i class="main-menu-item-icon ico icon-compras-inernet">&#xe824;</i> <span class="main-menu-item-label">Compras por Internet</span></li>
+                <li tabindex="8" id="pagos_internet" name="pagos por Internet" class="main-nav-bar-list-item"><i class="main-menu-item-icon ico icon-pagos-internet">&#xe825;</i> <span class="main-menu-item-label">Pagos por Internet</span></li>
+                <li tabindex="9" id="banco_internet" name="operaciones bancarias por Internet" class="main-nav-bar-list-item"><i class="main-menu-item-icon ico icon-operaciones-bancarias">&#xe826;</i><span class="main-menu-item-label">Banco por Internet</span></li>
+                <li tabindex="10" id="gobierno_internet" name="interacción con el gobierno por Internet" class="main-nav-bar-list-item"><i class="main-menu-item-icon m-wide ico icon-gobierno-internet">&#xe827;</i> <span class="main-menu-item-label">Gobierno por Internet</span></li>
+              </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="header_bottom" class="header-bottom container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h2 class="header-secondary-title second-title">2. Características sociodemográficas</h2>
+        </div>
+        <div class="col-sm-12 col-md-6" data-step="3" data-intro="En la esta sección <strong>selecciona las características del perfíl</strong> que deseas analizar">
+          <nav id="secondary_navbar" class="secondary-nav-bar-container">
+            <ul class="secondary-nav-bar">
+              <li tabindex="11" id="estado" class="secondary-nav-bar-list-item"><span class="secondary-menu-label">Estado</span><i class="secondary-menu-icon ico icon-estado">&#xe828;</i>
+                <ul id="submenu_estado" class="secundary-nav-bar-submenu">
+                  <li tabindex="12"  id="e01" class="submenu-item selected"><span class="submenu-label">Aguascalientes</span><i class="submenu-icon">&#xe800;</i> </li>
+                  <li tabindex="13" id="e02" class="submenu-item"><span class="submenu-label">Baja California</span><i class="submenu-icon">&#xe801;</i> </li>
+                  <li tabindex="14" id="e03" class="submenu-item"><span class="submenu-label">Baja California Sur</span><i class="submenu-icon">&#xe802;</i> </li>
+                  <li tabindex="15" id="e04" class="submenu-item"><span class="submenu-label">Campeche</span><i class="submenu-icon">&#xe803;</i> </li>
+                  <li tabindex="16" id="e05" class="submenu-item"><span class="submenu-label">Chiapas</span><i class="submenu-icon">&#xe804;</i> </li>
+                  <li tabindex="17" id="e06" class="submenu-item"><span class="submenu-label">Chihuahua</span><i class="submenu-icon">&#xe805;</i> </li>
+                  <li tabindex="18" id="e09" class="submenu-item"><span class="submenu-label">Ciudad de México</span><i class="submenu-icon">&#xe806;</i> </li>
+                  <li tabindex="19" id="e07" class="submenu-item"><span class="submenu-label">Coahuila</span><i class="submenu-icon">&#xe807;</i> </li>
+                  <li tabindex="20" id="e08" class="submenu-item"><span class="submenu-label">Colima</span><i class="submenu-icon">&#xe808;</i> </li>
+                  <li tabindex="21" id="e10" class="submenu-item"><span class="submenu-label">Durango</span><i class="submenu-icon">&#xe809;</i> </li>
+                  <li tabindex="22" id="e11" class="submenu-item"><span class="submenu-label">Guanajuato</span><i class="submenu-icon">&#xe80a;</i> </li>
+                  <li tabindex="23" id="e12" class="submenu-item"><span class="submenu-label">Guerrero</span><i class="submenu-icon">&#xe80b;</i> </li>
+                  <li tabindex="24" id="e13" class="submenu-item"><span class="submenu-label">Hidalgo</span><i class="submenu-icon">&#xe80c;</i> </li>
+                  <li tabindex="25" id="e14" class="submenu-item"><span class="submenu-label">Jalisco</span><i class="submenu-icon">&#xe80d;</i> </li>
+                  <li tabindex="26" id="e15" class="submenu-item"><span class="submenu-label">Estado de México</span><i class="submenu-icon">&#xe80e;</i> </li>
+                  <li tabindex="27" id="e16" class="submenu-item"><span class="submenu-label">Michoacán</span><i class="submenu-icon">&#xe80f;</i> </li>
+                  <li tabindex="28" id="e17" class="submenu-item"><span class="submenu-label">Morelos</span><i class="submenu-icon">&#xe810;</i> </li>
+                  <li tabindex="29" id="e18" class="submenu-item"><span class="submenu-label">Nayarit</span><i class="submenu-icon">&#xe811;</i> </li>
+                  <li tabindex="30" id="e19" class="submenu-item"><span class="submenu-label">Nuevo León</span><i class="submenu-icon">&#xe812;</i> </li>
+                  <li tabindex="31" id="e20" class="submenu-item"><span class="submenu-label">Oaxaca</span><i class="submenu-icon">&#xe813;</i> </li>
+                  <li tabindex="32" id="e21" class="submenu-item"><span class="submenu-label">Puebla</span><i class="submenu-icon">&#xe814;</i> </li>
+                  <li tabindex="33" id="e22" class="submenu-item"><span class="submenu-label">Querétaro</span><i class="submenu-icon">&#xe815;</i> </li>
+                  <li tabindex="34" id="e23" class="submenu-item"><span class="submenu-label">Quintana Roo</span><i class="submenu-icon">&#xe816;</i> </li>
+                  <li tabindex="35" id="e24" class="submenu-item"><span class="submenu-label">San Luis Potosí</span><i class="submenu-icon">&#xe817;</i> </li>
+                  <li tabindex="36" id="e25" class="submenu-item"><span class="submenu-label">Sinaloa</span><i class="submenu-icon">&#xe818;</i> </li>
+                  <li tabindex="37" id="e26" class="submenu-item"><span class="submenu-label">Sonora</span><i class="submenu-icon">&#xe819;</i> </li>
+                  <li tabindex="38" id="e27" class="submenu-item"><span class="submenu-label">Tabasco</span><i class="submenu-icon">&#xe81a;</i> </li>
+                  <li tabindex="39" id="e28" class="submenu-item"><span class="submenu-label">Tamaulipas</span><i class="submenu-icon">&#xe81b;</i> </li>
+                  <li tabindex="40" id="e29" class="submenu-item"><span class="submenu-label">Tlaxcala</span><i class="submenu-icon">&#xe81c;</i> </li>
+                  <li tabindex="41" id="e30" class="submenu-item"><span class="submenu-label">Veracruz</span><i class="submenu-icon">&#xe81d;</i> </li>
+                  <li tabindex="42" id="e31" class="submenu-item"><span class="submenu-label">Yucatán</span><i class="submenu-icon">&#xe81e;</i> </li>
+                  <li tabindex="43" id="e32" class="submenu-item"><span class="submenu-label">Zacatecas</span><i class="submenu-icon">&#xe81f;</i> </li>
+                </ul>
+              </li>
+              <li tabindex="44" id="sexo" class="secondary-nav-bar-list-item"><span class="secondary-menu-label">Sexo</span><i class="secondary-menu-icon ico icon-sexo">&#xe829;</i>
+                <ul id="submenu_sexo" class="secundary-nav-bar-submenu submenu-edad">
+                  <li tabindex="45" id="mujeres" class="submenu-item selected"><span class="submenu-label">Mujeres</span><i class="submenu-icon">&#xe82e;</i> </li>
+                  <li tabindex="46" id="hombres" class="submenu-item"><span class="submenu-label">Hombres</span><i class="submenu-icon">&#xe82f;</i> </li>
+                </ul>
+              </li>
+              <li tabindex="47" id="edad" class="secondary-nav-bar-list-item"><span class="secondary-menu-label">Edad</span><i class="secondary-menu-icon ico icon-edad">&#xe82a;</i>
+                <ul id="submenu-edad" class="secundary-nav-bar-submenu">
+                  <li tabindex="48" id="6-12" class="submenu-item selected"><span class="submenu-label">6-12</span><i class="submenu-icon">&#xe830;</i> </li>
+                  <li tabindex="49" id="13-17" class="submenu-item"><span class="submenu-label">13-17</span><i class="submenu-icon">&#xe831;</i> </li>
+                  <li tabindex="50" id="18-24" class="submenu-item"><span class="submenu-label">18-24</span><i class="submenu-icon">&#xe832;</i> </li>
+                  <li tabindex="51" id="25-34" class="submenu-item"><span class="submenu-label">25-34</span><i class="submenu-icon">&#xe833;</i> </li>
+                  <li tabindex="52" id="35-44" class="submenu-item"><span class="submenu-label">35-44</span><i class="submenu-icon">&#xe834;</i> </li>
+                  <li tabindex="53" id="45-54" class="submenu-item"><span class="submenu-label">45-54</span><i class="submenu-icon">&#xe835;</i> </li>
+                  <li tabindex="54" id="55-64" class="submenu-item"><span class="submenu-label">55-64</span><i class="submenu-icon">&#xe836;</i> </li>
+                  <li tabindex="55" id="65" class="submenu-item"><span class="submenu-label">65 +</span><i class="submenu-icon">&#xe837;</i> </li>
+                </ul>
+              </li>
+              <li tabindex="56" id="educacion" class="secondary-nav-bar-list-item"><span class="secondary-menu-label">Educación</span><i class="secondary-menu-icon ico icon-eduacacion">&#xe82b;</i>
+                <ul id="submenu-educacion" class="secundary-nav-bar-submenu">
+                  <li tabindex="57" id="Ninguna" class="submenu-item selected"><span class="submenu-label">Ninguna</span><i class="submenu-icon">&#xe838;</i> </li>
+                  <li tabindex="58" id="Basica" class="submenu-item"><span class="submenu-label">Básica</span><i class="submenu-icon">&#xe839;</i> </li>
+                  <li tabindex="59" id="Meida_superior" class="submenu-item"><span class="submenu-label">Media superior</span><i class="submenu-icon">&#xe83a;</i> </li>
+                  <li tabindex="60" id="Superior" class="submenu-item"><span class="submenu-label">Superior</span><i class="submenu-icon">&#xe83b;</i> </li>
+                </ul>
+              </li>
+              <li tabindex="61" id="ocupacion" class="secondary-nav-bar-list-item"><span class="secondary-menu-label">Ocupación</span><i class="secondary-menu-icon ico icon-ocupacion">&#xe82c;</i>
+                <ul id="submenu-ocupacion" class="secundary-nav-bar-submenu">
+                  <li tabindex="62" id="Estudia" class="submenu-item selected"><span class="submenu-label">Estudia</span><i class="submenu-icon">&#xe83c;</i> </li>
+                  <li tabindex="63" id="Hogar" class="submenu-item"><span class="submenu-label">Hogar</span><i class="submenu-icon">&#xe83d;</i> </li>
+                  <li tabindex="64" id="Trabaja" class="submenu-item"><span class="submenu-label">Trabaja</span><i class="submenu-icon">&#xe83e;</i> </li>
+                  <li tabindex="65" id="No_trabaja" class="submenu-item"><span class="submenu-label">No trabaja</span><i class="submenu-icon">&#xe83f;</i> </li>
+                </ul>
+              </li>
+              <li tabindex="66" id="ingreso" class="secondary-nav-bar-list-item"><span class="secondary-menu-label">Ingreso</span><i class="secondary-menu-icon ico icon-ingreso">&#xe82d;</i>
+                <ul id="submenu-ingreso" class="secundary-nav-bar-submenu">
+                  <li tabindex="67" id="Grupo_Economico_1" class="submenu-item selected"><span class="submenu-label">Menor a $12,063.<sup>00</sup> </span><i class="submenu-icon">&#xe840;</i> </li>
+                  <li tabindex="68" id="Grupo_Economico_2" class="submenu-item"><span class="submenu-label">$12,063.<sup>00</sup> y $23,140.<sup>00</sup></span><i class="submenu-icon">&#xe841;</i> </li>
+                  <li tabindex="69" id="Grupo_Economico_3" class="submenu-item"><span class="submenu-label">Mayor a $23,140.<sup>00</sup> </span><i class="submenu-icon">&#xe842;</i> </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="Calculadora" class="container">
+  <div class="hidden_vals" style="display: none;">
+    <input id="TicVal" type="hidden" value="uso_computadora" />
+    <input id="EdoSelVal" type="hidden" value="e01" />
+    <input id="SexSelVal" type="hidden" value="mujeres" />
+    <input id="EdadSelVal" type="hidden" value="6-12" />
+    <input id="EduSelVal" type="hidden" value="Ninguna" />
+    <input id="OcupSelVal" type="hidden" value="Estudia" />
+    <input id="IngresoSelVal" type="hidden" value="Grupo_Economico_1" />
+    <input id="NivelGeoPerfilSelVal" type="hidden" value="1" />
+    <input id="VisitaVal" type="hidden" value="0" />
+  </div>
+  <div class="section-container row"> 
+    <!-- 1 Panel perfil -->
+    <div class="section-panel-container col-md-12 col-lg-7">
+      <section id="panel_perfil" class="main-panel-container" data-step="4" data-intro="En este apartado se muestra el resultado de la probabilidad de uso considerando las <strong>características sociodemográficas</strong> seleccionadas." data-position="right">
+        <h3 class="main-panel-title">Probabilidad de <span id="perfil_tt">uso de computadora</span></h3>
+        <div class="panel-container">
+          <div class="row">
+            <article class="section-article-item col-lg-12" data-step="5" data-intro="En esta parte puedes elegir si deseas conocer la <strong>probabilidad de uso</strong> dentro de la(s) ciudad(es) del <strong>estado</strong> seleccionado o del <strong>resto de la entidad</strong>.">
+              <div id="geo-perfil" class="geo-component" style="position: relative;">
+                <div class="component-title"><i class="ciudad info-icon" data-html="true">&#xe846;</i>Ciudad:</div>
+                <div class="geo-component-select">
+                  <div class="component-main-text">Aguascalientes</div>
+                  <i class="icon-row-table icon-component">&#xe845;</i> </div>
+                <div class="component-list">
+                  <p class="first-item"></p>
+                </div>
+              </div>
+            </article>
+            <!--foto resultado perfil-->
+            <article class="section-article-item perfil-result-container col-md-12 col-lg-2 ">
+              <div class="article-item">
+                <div id="imgs-perfil-result" class="imgs-perfil-result"> <img id="perfil-result-img" class="perfil-result-img" src="svg/perfil-demo-m-6-12.svg" alt="Imagen del prefil"> </div>
+                <div id="imgs-tic-result" class="imgs-tic-result"> <img id="tic-result-img" class="tic-result-img" src="svg/uso_computadora.svg" alt="Imagen de la tic"> </div>
+              </div>
+            </article>
+            <!--Gráfica de Perfil Knob-->
+            <article class="section-article-item col-md-12 col-lg-3">
+              <div class="article-item">
+                <div class="grph perfil" aria-label="Gráfica perfil">
+                 	<div id="grphPerfil" class="item-graph-perfil"></div>
+                </div>
+              </div>
+            </article>
+            <!--Lista de atributos del perfil-->
+            <article class="section-article-item col-md-12 col-lg-7">
+              <div class="article-item" style="text-align: left;">
+                <ul id="result_perfil" class="result-perfil-list">
+                  <li class="result-perfil-item"><i class="result-perfil-icon"></i><span class="result-perfil-label">Sexo: </span><span class="perfil-label-result sexo">Mujer</span></li>
+                  <li class="result-perfil-item"><i class="result-perfil-icon"></i><span class="result-perfil-label">Edad: </span><span class="perfil-label-result edad">6-12 años</span></li>
+                  <li class="result-perfil-item"><i class="result-perfil-icon" data-html="true" >&#xe846;</i><span class="result-perfil-label">Educación: </span><span class="perfil-label-result educacion">Ninguna</span></li>
+                  <li class="result-perfil-item"><i class="result-perfil-icon" data-html="true" >&#xe846;</i><span class="result-perfil-label">Ocupación: </span><span class="perfil-label-result ocupacion">Estudia</span></li>
+                  <li class="result-perfil-item"><i class="result-perfil-icon"></i><span class="result-perfil-label">Ingreso en el hogar:</span><span class="perfil-label-result ingreso">Menos de $12,063.00</span></li>
+                </ul>
+              </div>
+            </article>
+			    <div class="col-lg-12">
+				<p tabindex="93" class="col-lg-12 section-end-paragraph mt-5 mb-2">Las personas que cubren este perfil tienen una probabilidad de <span class="perfil-perc-text">98</span> de <span class="tic-perfil-text">utilizar computadora</span>.</p>
+				<h4 class="nota-container" style="font-size:8pt;"><strong>Notas:</strong></h4>
+				<ol class="section-end-list">
+				<li>Las probabilidades de adopción de 1) Computadora, 2) Internet y 3) Teléfono móvil están calculadas respecto del total de la población de 6 años o más; </li>
+				<li>La probabilidad de usar Internet mediante Smartphone está calculada respecto del total de la población de 6 años o más que tiene un teléfono inteligente;</li>
+				<li>La probabilidad de usar el Internet para 1) Compras, 2) Pagos, 3) Banca y 4) Gobierno, están calculadas respecto del total de la población de 6 años o más que usa Internet</li>
+			</ol>
+			</div>
+          </div>
+        
+        </div>
+      </section>
+    </div>
+    <!-- 1 Final Panel perfil --> 
+    
+    <!-- 2 Panel Datos demográficos-->
+    <div class="section-panel-container col-md-12 col-lg-5" data-step="8" data-intro="En esta sección se muestra el número de hogares y de habitantes del estado seleccionado." data-position="left">
+      <section class="main-panel-container secondary">
+        <h3 class="main-panel-title">Datos demográficos</h3>
+        <div class="panel-container">
+          <div class="table-responsive-md">
+            <table class="table demograficos table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Habitantes</th>
+                  <th scope="col">Hogares</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><i class="icon-col-table icon green data-cicon">&#xe803;</i><span class="data-cne">Campeche</span></th>
+                  <td><i class="icon-col-table icon green">&#xe843;</i><span class="dataHabitantes"></span></td>
+                  <td><i class="icon-col-table icon green">&#xe844;</i><span class="dataHogares"></span></td>
+                </tr>
+                <tr>
+                  <th scope="row"><i class="icon-col-table icon blue">&#xe828;</i><span>Nacional</span></th>
+                  <td><i class="icon-col-table icon blue">&#xe843;</i><span class="dataHabitantesNac"></span></td>
+                  <td><i class="icon-col-table icon blue">&#xe844;</i><span class="dataHogaresNac"></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- 2 Final Panel Datos demográficos--> 
+    
+    <!-- 3 Panel distribución de la población -->
+    <div class="section-panel-container col-lg-12" data-step="6" data-intro="En esta área se muestra de manera predeterminada la distribución de la población de 6 años o más del estado que se haya seleccionado." data-position="top">
+      <section class="main-panel-container">
+        <h3 class="main-panel-title">Distribución de la población de 6 años o más <span class="data-cne-geo">Aguascalientes</span></h3>
+        <div class="row">
+          <article class="section-article-item col-md-12 col-lg-3">
+            <div class="panel-container">
+              <div class="article-item" data-step="7" data-intro="En esta área puedes seleccionar si deseas desagregar las <strong>características</strong> de la población de 6 años o más por <strong>sexo (Mujer, Hombre o Ambos) y nivel geográfico (Nacional, Estatal y ciudades seleccionadas)</strong>." data-position="right">
+                <h2 class="main-panel-subtitle">Población por interés</h2>
+                <div class="component-box">
+                  <div id="geo-graficas" class="geo-component">
+                    <div class="component-title">Nivel geográfico:</div>
+                    <div class="geo-component-select">
+                      <div class="component-main-text">Estatal</div>
+                      <i class="icon-row-table icon-component">&#xe845;</i></div>
+                    <div class="component-list">
+                      <p class="geo-perfil-item first-item"></p>
+                      <p class="geo-perfil-item second-item"></p>
+                      <p class="geo-perfil-item third-item"></p>
+                    </div>
+                  </div>
+                  <div id="sex-graficas" class="sex-component">
+                    <div class="component-title">Sexo:</div>
+                    <div class="sex-component-select">
+                      <div class="component-main-text">Ambos</div>
+                      <i class="icon-row-table icon-component">&#xe845;</i> </div>
+                    <div class="component-list">
+                      <p class="sex-perfil-item first-item">Hombre</p>
+                      <p class="sex-perfil-item second-item">Mujer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="article-item" style="text-align: center">
+                <div id="mujer_sex">
+                  <div class="row grph-sexo-row">
+                    <div> <img  class="mujeres-svg" src="svg/mujer.svg" /> </div>
+                    <div>
+                      <div class="grph mujeres" aria-label="Gráfica mujeres">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div  id="hombre_sex">
+                  <div class="row grph-sexo-row">
+                    <div> <img  class="mujeres-svg" src="svg/hombre.svg" /> </div>
+                    <div>
+                      <div class="grph hombres" aria-label="Gráfica hombres">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="section-article-item  col-md-12 col-lg-4">
+            <div class="article-item secondary">
+              <div class="panel-grph-container">
+                <div class="item-graph-container">
+                  <div id="grph-Ingreso" class="item-graph"></div>
+                </div>
+                <div class="item-graph-container">
+                  <div id="grph-Ocupacion" class="item-graph"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="section-article-item col-md-12 col-lg-5">
+            <div class="article-item">
+              <div class="panel-grph-container">
+                <div class="item-graph-container">
+                  <div id="grph-Educacion" class="item-graph"></div>
+                </div>
+                <div class="item-graph-container">
+                  <div id="grph-Edad" class="item-graph"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+    <!-- 3 Final Panel distribución de la población --> 
+    
+    <!-- 4 Panel Penetraciones y teledensidades-->
+    <div class="section-panel-container col-lg-12" data-step="9" data-intro="Por último, se muestra la penetración de equipamiento de cómputo y telecomunicaciones fijas,  así como la teledensidad de telecomunicaciones móviles en el estado seleccionado por el usuario.
+" data-position="top">
+      <section class="main-panel-container secondary">
+        <h3 class="main-panel-title">Penetraciones y Teledensidades</h3>
+        <div class="panel-container">
+          <div class="table-responsive">
+            <table class="table teledensidades table-striped">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"><i class="icon-col-table icon blue">&#xe848;</i>Penetración equipos de cómputo </th>
+                  <th scope="col"><i class="icon-col-table icon blue">&#xe849;</i>Penetración de Banda Ancha Fija</th>
+                  <th scope="col"><i class="icon-col-table icon blue">&#xe84a;</i>Penetración de Telefonía Fija</th>
+                  <th scope="col"><i class="icon-col-table icon blue">&#xe84b;</i>Teledensidad de Banda Ancha Móvil</th>
+                  <th scope="col"><i class="icon-col-table icon blue">&#xe847;</i>Teledensidad de Telefonía Móvil</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><div class="row-icon-container"><i class="icon-row-table icon green data-cicon">&#xe803;</i><span style="display: inline-block" class="data-cne">Campeche</span></div></th>
+                  <td class="P_equipos_computo_EdoRes">37</td>
+                  <td class="P_banda_ancha_fija_EdoRes">37</td>
+                  <td class="P_telefonia_fija_EdoRes">22</td>
+                  <td class="T_banda_ancha_movil_EdoRes">23</td>
+                  <td class="T_telefonia_movil_EdoRes">76</td>
+                </tr>
+                <tr>
+                  <th scope="row"><div class="row-icon-container"><i class="icon-row-table icon blue">&#xe828;</i><span style="display: inline-block">Nacional</span></div></th>
+                  <td class="P_equipos_computo_NacRes">46</td>
+                  <td class="P_banda_ancha_fija_NacRes">46</td>
+                  <td class="P_telefonia_fija_NacRes">91</td>
+                  <td class="T_banda_ancha_movil_NacRes">22</td>
+                  <td class="T_telefonia_movil_NacRes">98</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="section-end-paragraph">La penetración de los servicios se calcula por cada 100 hogares. El número de hogares corresponde a los datos publicados por la CONAPO.</p>
+          <p class="section-end-paragraph">La teledensidad de los servicios se calcula por cada 100 habitantes. El número de habitantes corresponde a los datos publicados por CONAPO.</p>
+          <p class="section-end-paragraph">Para mayor información visita la sección de Manuales y metodologías en el Banco de Información de Telecomunicaciones <a href="https://bit.ift.org.mx" target="_blank">https://bit.ift.org.mx</a></p>
+          <p tabindex="119" class="section-end-paragraph mb-4">Los datos de las penetraciones y teledensidades provienen del Anuario Estadístico 2016</p>
+        </div>
+      </section>
+    </div>
+    <!-- 4 Final Panel Penetraciones y teledensidades--> 
+  </div>
+</main>
+	<div class="container">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="nota-container">
+          <strong id="textovar">Los resultados del modelo están calculados con respecto a la población de 6 años o más</strong>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4 tabindex="120" class="nota-container"><strong>Notas metodológicas:</strong></h4>
+        <ol class="section-end-list2">
+          <li tabindex="121">Los datos demográficos, la distribución de la población y el número de TIC para el cálculo de las penetraciones y teledensidades se obtienen de la <strong>ENDUTIH 2016</strong>.</li>
+          <li tabindex="122">La metodología para estimar las probabilidades puede consultarse en el estudio <a href="http://www.ift.org.mx/estadisticas/adopcion-de-las-tic-y-usos-de-internet-en-mexico-impacto-de-las-caracteristicas-sociodemograficas-de" target="_blank">Adopción de las TIC y usos de Internet en México: Impacto de las características sociodemográficas de los usuarios.</a></li>
+        </ol>
+      </div>
+      <div class="col-md-6">
+        <div class="button-container">
+          <button class="col-md-4 btn btn-primary btn-cal data-csv" aria-label="Exportar datos en formato csv">Exportar CSV</button>
+          <button class="col-md-4 btn btn-primary btn-cal data-excel" aria-label="Exportar datos en formato excel"><i class="main-menu-item-icon ico icon-uso-computadora" aria-hidden="true">&#xe84c;</i>Exportar excel</button>
+          <div class="col-md-4 btn-cal">
+            <button class="btn btn-primary btn-cal data-pdf" aria-label="Exportar datos en formato pdf"><i class="main-menu-item-icon ico icon-uso-computadora" aria-hidden="true">&#xe84d;</i> Exportar pdf</button>
+            <p class="section-end-paragraph texto-pdf" style="position: absolute;text-align:  center;font-size:  10px;top: 41px;">Esta opción exporta los resultados en esta página en formato PDF</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	  <div class="row">
+		  <div class="col-lg-12">
+			  <p class="section-end-note">
+				  <strong style="font-weight: bold;">Nota:</strong> La Calculadora de Probabilidades es compatible
+				  con Google Chrome 68.0.34, Internet Explorer 11.0.96, Microsoft Edge 40.1, Firefox 54.0.1, Safari 11.0.3 y sus versiones superiores.
+			  </p>
+		  </div>
+	  </div>
+  </div>
+</div>
+
+<footer class="ift-footer container-fluid">
+  <div class="inner-footer container">
+    <div class="row">
+      <div class="footer-logo-container col-md-12 col-lg-4"><a href="http://www.ift.org.mx/" target="_blank"><img id="ift_logo_footer" src="svg/ift-logo-footer.svg" alt="Intituto Federal de Telecomunicaciones"/></a> </div>
+      <div class="footer-text-container col-md-12 col-lg-8">
+        <p class="ift-footer-paragraph">© 2018 Instituto Federal de Telecomunicaciones - Algunos Derechos Reservados</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h5 class="modal-title" id="myModalLabel">Introducción</h5>
+      </div>
+      <div class="modal-body">
+       <h6>Bienvenido a la Calculadora de probabilidades de adopción de TIC y usos de Internet en México</h6>
+        <p>A continuación te presentaremos una breve  guía para utilizar de manera eficiente este micrositio y puedas encontrar la información que estás buscando.</p>
+        <p>Para empezar la guía pulsa el botón <strong>Iniciar</strong> , si no deseas utilizarla pulsa el botón <strong>Omitir</strong></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Omitir</button>
+        <button id="inicioGuia" type="button" class="btn btn-primary">Iniciar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  @media only screen and (max-width: 1200px){
+    .texto-pdf{
+        top: 100px !important;
+    }
+  }
+  @media only screen and (max-width: 991px){
+    .texto-pdf{
+        top: 150px !important;
+    }
+  }
+</style>
+<!-- Bootstrap3 y otras librerias --> 
+<script src="introLib/intro.min.js"></script> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap3.min.js"></script>
+<script src="js/jquery.number.min.js"></script>
+
+<!-- Graficas de Barras y Pie --> 
+<script src="js/echarts/echarts.js"></script> 
+<script src="js/icondefinition.min.js"></script> 
+<script src="js/direcotry.min.js"></script> 
+<script src="js/pie-bar-chars.min.js"></script>
+<!-- Custom JavaScript --> 
+<script src="js/custom_ie.min.js"></script>
+</body>
+</html>

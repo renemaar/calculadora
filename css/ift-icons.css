@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'ift-icons';
+  src: url('../font/ift-icons.eot?5983957');
+  src: url('../font/ift-icons.eot?5983957#iefix') format('embedded-opentype'),
+       url('../font/ift-icons.woff2?5983957') format('woff2'),
+       url('../font/ift-icons.woff?5983957') format('woff'),
+       url('../font/ift-icons.ttf?5983957') format('truetype'),
+       url('../font/ift-icons.svg?5983957#ift-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'ift-icons';
+    src: url('../font/ift-icons.svg?5983957#ift-icons') format('svg');
+  }
+}
+*/
+ 
+ [class^="ico icon-"]:before, [class*=" ico icon-"]:before {
+  font-family: "ift-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.ico icon-01-aguascalientes:before { content: '\e800'; } /* '' */
+.ico icon-02-baja-california:before { content: '\e801'; } /* '' */
+.ico icon-03-baja-california-sur:before { content: '\e802'; } /* '' */
+.ico icon-04-campeche:before { content: '\e803'; } /* '' */
+.ico icon-05-chiapas:before { content: '\e804'; } /* '' */
+.ico icon-06-chihuahua:before { content: '\e805'; } /* '' */
+.ico icon-07-ciudad_de_mexico:before { content: '\e806'; } /* '' */
+.ico icon-08-coahuila:before { content: '\e807'; } /* '' */
+.ico icon-09-colima:before { content: '\e808'; } /* '' */
+.ico icon-10-durango:before { content: '\e809'; } /* '' */
+.ico icon-11-guanajuato:before { content: '\e80a'; } /* '' */
+.ico icon-12-guerrero:before { content: '\e80b'; } /* '' */
+.ico icon-13-hidalgo:before { content: '\e80c'; } /* '' */
+.ico icon-14-jalisco:before { content: '\e80d'; } /* '' */
+.ico icon-15-estado-de-mexico:before { content: '\e80e'; } /* '' */
+.ico icon-16-michoacan:before { content: '\e80f'; } /* '' */
+.ico icon-17-morelos:before { content: '\e810'; } /* '' */
+.ico icon-18-nayarit:before { content: '\e811'; } /* '' */
+.ico icon-19-nuevo-leon:before { content: '\e812'; } /* '' */
+.ico icon-20-oaxaca:before { content: '\e813'; } /* '' */
+.ico icon-21-puebla:before { content: '\e814'; } /* '' */
+.ico icon-22-queretaro:before { content: '\e815'; } /* '' */
+.ico icon-23-quintana-roo:before { content: '\e816'; } /* '' */
+.ico icon-24-san-luis-potosi:before { content: '\e817'; } /* '' */
+.ico icon-25-sinaloa:before { content: '\e818'; } /* '' */
+.ico icon-26-sonora:before { content: '\e819'; } /* '' */
+.ico icon-27-tabasco:before { content: '\e81a'; } /* '' */
+.ico icon-28-tamaulipas:before { content: '\e81b'; } /* '' */
+.ico icon-29-tlaxcala:before { content: '\e81c'; } /* '' */
+.ico icon-30-veracruz:before { content: '\e81d'; } /* '' */
+.ico icon-31-yucatan:before { content: '\e81e'; } /* '' */
+.ico icon-32-zacatecas:before { content: '\e81f'; } /* '' */
+.ico icon-uso-computadora:before { content: '\e820'; } /* '' */
+.ico icon-uso-nternet:before { content: '\e821'; } /* '' */
+.ico icon-uso-celular:before { content: '\e822'; } /* '' */
+.ico icon-uso-smartphone:before { content: '\e823'; } /* '' */
+.ico icon-compras-inernet:before { content: '\e824'; } /* '' */
+.ico icon-pagos-internet:before { content: '\e825'; } /* '' */
+.ico icon-operaciones-bancarias:before { content: '\e826'; } /* '' */
+.ico icon-gobierno-internet:before { content: '\e827'; } /* '' */
+.ico icon-nacional:before { content: '\e828'; } /* '' */
+.ico icon-sexo:before { content: '\e829'; } /* '' */
+.ico icon-edad:before { content: '\e82a'; } /* '' */
+.ico icon-eduacacion:before { content: '\e82b'; } /* '' */
+.ico icon-ocupacion:before { content: '\e82c'; } /* '' */
+.ico icon-ingreso:before { content: '\e82d'; } /* '' */
+.ico icon-mujeres:before { content: '\e82e'; } /* '' */
+.ico icon-hombres:before { content: '\e82f'; } /* '' */
+.ico icon-6-12:before { content: '\e830'; } /* '' */
+.ico icon-13-17:before { content: '\e831'; } /* '' */
+.ico icon-25-34:before { content: '\e832'; } /* '' */
+.ico icon-35-44:before { content: '\e833'; } /* '' */
+.ico icon-18-24:before { content: '\e834'; } /* '' */
+.ico icon-65-mas:before { content: '\e835'; } /* '' */
+.ico icon-45-54:before { content: '\e836'; } /* '' */
+.ico icon-55-64:before { content: '\e837'; } /* '' */
+.ico icon-eduacacion-ninguna:before { content: '\e838'; } /* '' */
+.ico icon-eduacacion-basica:before { content: '\e839'; } /* '' */
+.ico icon-eduacacion-media:before { content: '\e83a'; } /* '' */
+.ico icon-eduacacion-superior:before { content: '\e83b'; } /* '' */
+.ico icon-ocupacion-estudiante:before { content: '\e83c'; } /* '' */
+.ico icon-ocupacion-hogar:before { content: '\e83d'; } /* '' */
+.ico icon-ocupacion-trabaja:before { content: '\e83e'; } /* '' */
+.ico icon-ocupacion-no-trabaja:before { content: '\e83f'; } /* '' */
+.ico icon-ingreso-menor:before { content: '\e840'; } /* '' */
+.ico icon-ingreso-medio:before { content: '\e841'; } /* '' */
+.ico icon-ingreso-mayor:before { content: '\e842'; } /* '' */
+.ico icon-habitantes:before { content: '\e843'; } /* '' */
+.ico icon-hogares:before { content: '\e844'; } /* '' */
+.ico icon-drop-down:before { content: '\e845'; } /* '' */
+.ico icon-info:before { content: '\e846'; } /* '' */
+.ico icon-telefonia-movil:before { content: '\e847'; } /* '' */
+.ico icon-equipos-computo:before { content: '\e848'; } /* '' */
+.ico icon-banda-ancha:before { content: '\e849'; } /* '' */
+.ico icon-telefonia-fija:before { content: '\e84a'; } /* '' */
+.ico icon-banda-ancha-movil:before { content: '\e84b'; } /* '' */
+.ico icon-excel:before { content: '\e84c'; } /* '' */
+.ico icon-pdf:before { content: '\e84d'; } /* '' */
+.ico icon-resto-entidad:before { content: '\e84e'; } /* '' */
+.ico icon-ciudades:before { content: '\e84f'; } /* '' */
+.ico icon-ciudad:before { content: '\e850'; } /* '' */
