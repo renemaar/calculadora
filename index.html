@@ -1,27 +1,5 @@
 <!doctype html>
 <html lang="es"><head>
-<!-- Si es IE 11 o menor -->
-<script type="text/javascript">
-	navigator.sayswho= (function(){
-		var ua= navigator.userAgent, tem, 
-		M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
-		if(/trident/i.test(M[1])){
-			tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
-			var href = window.location.href;
-            var dir = href.substring(0, href.lastIndexOf('/')) + "/";
-            var file = dir + 'calculadora_ie.html';
-            window.location = file;
-			return 'IE '+(tem[1] || '');
-		}
-		if(M[1]=== 'Chrome'){
-			tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
-			if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
-		}
-		M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
-		if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
-		return M.join(' ');
-	})();
-</script>
 <title>Calculadora de probabilidades de adopción de TIC y usos de Internet en México</title>
 <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -61,20 +39,6 @@
 <!-- Layout personalizado CSS -->
 <link rel="stylesheet" href="css/layout.css">
 <link rel="canonical" href="http://calculadoraprob.ift.org.mx/calculadora.html" />
-<script>
- 	var loc=window.location.hostname;
-	if(loc==="calculadoraprob.ift.org.mx"){
-		'use strict';
-		var Myscript1 = document.createElement('script');
-		Myscript1.type="text/javascript";
-		Myscript1.async="true";
-		Myscript1.src="https://www.googletagmanager.com/gtag/js?id=UA-43968735-32";
-		document.head.appendChild(Myscript1);
-		var Myscript2 = document.createElement('script');
-		Myscript2.src="js/analytics.js";
-		document.head.appendChild(Myscript2);
-	}
-</script>
 </head>
 <body class="intro">
 <header>
@@ -556,7 +520,6 @@
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.number.min.js"></script> 
-<script src="introLib/intro.min.js"></script> 
 <!-- Custom JavaScript --> 
 <!--Graficas Knob  Perfil y Sexo--> 
 <!--[if IE]><script type="text/javascript" src="js/excanvas.min.js"></script><![endif]--> 
